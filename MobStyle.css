@@ -18,17 +18,17 @@ header {
 
 @font-face {
     font-family: "TT Lakes";
-    src: url("../sources/TTLakes-Bold.ttf") format("truetype"); 
+    src: url("sources/TTLakes-Bold.ttf") format("truetype"); 
     font-weight: bold; 
 }
 @font-face {
     font-family: "TT Lakes";
-    src: url("../sources/TTLakes-Regular.ttf") format("truetype"); 
+    src: url("sources/TTLakes-Regular.ttf") format("truetype"); 
     font-weight: lighter; 
 }
 @font-face {
     font-family: "TT Lakes";
-    src: url("../sources/TTLakes-Medium.ttf") format("truetype"); 
+    src: url("sources/TTLakes-Medium.ttf") format("truetype"); 
     font-weight: normal; 
 }
 
