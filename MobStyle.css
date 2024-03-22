@@ -205,7 +205,7 @@ p{
         padding-left: 16px;
         padding-right: 16px;
     }
-    .content__text_hidden {
+    .content__text_visible768 {
         display: none;
         width: 312px;
     }
@@ -214,6 +214,10 @@ p{
         
     .readMore__expand {
         margin-left: 16px;
+    }
+    
+    .content__text_visible1120 {
+        display: none;
     }
 }
 
@@ -269,7 +273,7 @@ p{
         padding-left: 24px;
         padding-right: 24px;
     }
-    .content__text_hidden {
+    .content__text_visible768 {
         display: block;
         width: 319px;
         line-height: 20px;
@@ -285,6 +289,10 @@ p{
     }
     .readMore__expand {
         margin-left: 24px;
+    }
+    
+    .content__text_visible1120 {
+        display: none;
     }
 }
 
@@ -360,13 +368,13 @@ p{
         padding-left: 35px;
         padding-right: 35px;
     }
-    .content__text_hidden {
+    .content__text_visible768 {
         width: 496px;
         padding-left: 35px;
         padding-right: 35px;
     }
-    .content__text_hidden::after {
-        content: ", что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.";
+    .content__text_visible1120 {
+        display: inline;
     }
     .readMore__expand {
         margin-left: 35px;
