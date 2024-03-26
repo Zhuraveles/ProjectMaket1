@@ -8,77 +8,133 @@
     <body>
         <div class="wrapper"> 
             <header>
-                <nav class="menu">
-                    <div class="menu__buttons-left">
-                        <button class="menu__button">
+                <nav class="menu-horizontal">
+                    <div class="menu-horizontal__buttons-left">
+                        <button class="menu-button">
                             <img src="sources/burger.svg" alt="CPS">
                         </button>
-                        <img src="sources/divider.png" class="menu__separator menu__button_hidden"> <!-- Заменить -->
-                        <a href="#" class="menu__logo">
+                        <img src="sources/divider.png" class="menu-horizontal__separator menu-button_hidden"> <!-- Заменить -->
+                        <a href="#" class="menu-horizontal__logo">
                             <img src="sources/Group.svg">
                         </a>
                     </div>
-                    <div class="menu__buttons-right">
-                        <button class="menu__button menu__button_hidden">
+                    <div class="menu-horizontal__buttons-right">
+                        <button class="menu-button menu-button_hidden">
                             <img src="sources/call.svg">
                         </button>
-                        <button class="menu__button menu__button_hidden">
+                        <button class="menu-button menu-button_hidden">
                             <img src="sources/chat.svg">
                         </button>
-                        <button class="menu__button menu__button_hidden">
+                        <button class="menu-button menu-button_hidden">
                             <img src="sources/profile.svg">
                         </button>
-                        <img src="sources/divider.png" class="menu__separator"> <!-- Заменить -->
-                        <button class="menu__button">
+                        <img src="sources/divider.png" class="menu-horizontal__separator"> <!-- Заменить -->
+                        <button class="menu-button">
                             <img src="sources/repair.svg">
                         </button>
-                        <button class="menu__button">
+                        <button class="menu-button">
                             <img src="sources/checkstatus.svg">
                         </button>
                     </div>
                 </nav>
             </header>
-            <section class="page">
-                <div class="page__header1"> 
-                    <h1 class="page__textHeader1">Услуги и сервисы</h1>
-                    <div class="page__buttons">
-                        <a href="#" class="page__buttons_detailed">Оставить заявку
-                            <button class="menu__button">
-                                <img src="sources/repair.svg">
-                            </button>
-                        </a>
-                        <a href="#" class="page__buttons_detailed">Статус ремонта
-                            <button class="menu__button">
-                                <img src="sources/checkstatus.svg">
-                            </button>
-                        </a>
+            <div class="without-header">
+                <nav class="menu-vertical">
+                    <div class="menu-vertical__div-top">
+                        <div class="menu-vertical__buttons">
+                            <div class="menu-vertical__buttons-left">
+                                <button class="menu-button">
+                                    <img src="sources/burgerClose.svg">
+                                </button>
+                                <a href="#" class="menu__logo">
+                                    <img src="sources/Group.svg">
+                                </a>
+                            </div>
+                            <div class="menu-vertical__buttons-right">
+                                <button class="menu-button">
+                                    <img src="sources/search.svg">
+                                </button>
+                            </div>
+                        </div>
+                        <div class="menu-vertical__tab">
+                            <a class="tab-vertical tab-vertical_active">Ремонт техники</a>
+                            <a class="tab-vertical">Услуги и сервисы</a>
+                            <a class="tab-vertical">Корпоративным клиентам</a>
+                            <a class="tab-vertical">Продавцам техники</a>
+                            <a class="tab-vertical">Партнерам</a>
+                            <a class="tab-vertical">Производителям</a>
+                            <a class="tab-vertical">Наши сервисные центры</a>
+                            <a class="tab-vertical">Контакты</a>
+                        </div>
                     </div>
-                </div>
-                <div class="page__tab"> 
-                    <button class="tab tab_hidden">Ремонтируемые бренды</button>
-                    <button class="tab">Ремонтируемые устройства</button>
-                    <button class="tab tab_visible">Дополнительные услуги</button>
-                    <button class="tab">Цены на услуги</button>
-                    <button class="tab tab_hidden">Адреса сервисных центров</button>
-                    <button class="tab">Специальные цены</button>
-                    <button class="tab">Отзывы</button>
-                </div>
-                <section class="content">
-                    <div class="content__block-left">
-                        <p class="content__text">Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.</p>
-                        <p class="content__text_visible768">Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера<span class="content__text_visible1120">, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.</span></p>
-                        <div class="content__readMore">
-                            <a href="#" class="readMore__expand">
-                                <img class="expand__img" src="sources/expand.svg" alt="">
-                                <p class="readMore__text">Читать далее</p>
+                    <div class="menu-vertical_div-bottom">
+                        <div class="menu-vertical__contacts">
+                            <button class="menu-button">
+                                <img src="sources/call.svg">
+                            </button>
+                            <button class="menu-button">
+                                <img src="sources/chat.svg">
+                            </button>
+                            <button class="menu-button">
+                                <img src="sources/profile.svg">
+                            </button>
+                        </div>
+                        <div class="menu-vertical__email">
+                            <p>mail@cps.com</p>
+                        </div>
+                        <div class="menu-vertical__phone">
+                            <p>8 800 890 8900</p>
+                        </div>
+                        <div class="menu-vertical__languages">
+                            <a class="language_active">RU</a>
+                            <a>EN</a>
+                            <a>CH</a>
+                        </div>
+                    </div>
+                </nav>
+                <section class="page">
+                    <div class="page__header1"> 
+                        <h1 class="page__textHeader1">Услуги и сервисы</h1>
+                        <div class="page__buttons">
+                            <a href="#" class="page__buttons_detailed">Оставить заявку
+                                <button class="menu-button">
+                                    <img src="sources/repair.svg">
+                                </button>
+                            </a>
+                            <a href="#" class="page__buttons_detailed">Статус ремонта
+                                <button class="menu-button">
+                                    <img src="sources/checkstatus.svg">
+                                </button>
                             </a>
                         </div>
                     </div>
-                    <div class="content__block-right">
-                        <img src="sources/MG3223.png" class="content__img" alt="CPS">
-                    </div>  
+                    <div class="page__tab"> 
+                        <button class="tab tab_hidden">Ремонтируемые бренды</button>
+                        <button class="tab">Ремонтируемые устройства</button>
+                        <button class="tab tab_visible">Дополнительные услуги</button>
+                        <button class="tab">Цены на услуги</button>
+                        <button class="tab tab_hidden">Адреса сервисных центров</button>
+                        <button class="tab">Специальные цены</button>
+                        <button class="tab">Отзывы</button>
+                    </div>
+                    <section class="content">
+                        <div class="content__block-left">
+                            <p class="content__text">Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.</p>
+                            <p class="content__text_visible768">Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера<span class="content__text_visible1120">, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.</span></p>
+                            <div class="content__readMore">
+                                <a href="#" class="readMore__expand">
+                                    <img class="expand__img" src="sources/expand.svg" alt="">
+                                    <p class="readMore__text">Читать далее</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="content__block-right">
+                            <img src="sources/MG3223.png" class="content__img" alt="CPS">
+                        </div>  
+                    </section>
+                    <div class="null"></div>
                 </section>
-            </section>
+            </div>
         </div>
     </body>
 </html>
