@@ -14,13 +14,6 @@ document.addEventListener("DOMContentLoaded", function () {
       clickable: true,
       /*dynamicBullets: true,*/
     },
-    /*navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-    scrollbar: {
-      el: '.swiper-scrollbar',
-    },*/
   });
 });
 
