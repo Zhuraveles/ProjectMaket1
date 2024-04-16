@@ -33,7 +33,7 @@ header {
 }
 
 
-/*_____________МЕНЮ_______________*/
+/*_____________ВЕРХНЕЕ МЕНЮ_______________*/
 .menu-horizontal {
     display: flex;
     align-items: center;
@@ -64,14 +64,20 @@ header {
 
 /*_____________БОКОВОЕ МЕНЮ_______________*/
 .menu-vertical {
-    width: 320px;
     background-color: white;
     box-shadow: 16px 0px 52px rgba(14, 24, 80, 0.2),
                 -2px 0px 4px rgba(69, 79, 126, 0.02);
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: space-between;
     /*overflow: auto;*/
+    overflow-y:auto;
+    overflow-x:hidden;
+    width: 320px;
+    min-width: 320px;
+}
+.wrapper.withLeftMenu .menu-vertical {
+    display: flex;
 }
 
 .menu-vertical__div-top {
@@ -175,6 +181,12 @@ header {
 }
 .language_active {
     color: #7E7E82;
+    cursor: pointer;
+}
+.language_disactive:hover {
+    color: #7E7E82;
+    cursor: pointer;
+    border-bottom: 1px solid #7E7E82;
 }
 
 /*_____________КОНТЕНТ_______________*/
@@ -186,6 +198,7 @@ header {
 .page {
     display: block;
     flex-wrap: wrap;
+    overflow-x:hidden;
 }
 .page__header1 {
     display: flex;
@@ -266,6 +279,7 @@ p{
     height: 24px;
     margin-top: 8px;
     margin-bottom: 12px;
+
 }
 .readMore__expand {
     display: flex;
@@ -286,8 +300,9 @@ p{
     margin-bottom: 12px;
 }
 
-
-
+.swiper-slide:hover .brands__more{
+    background-color: #ff3e780a;
+}
 
 .brands {
     width: 100%;
@@ -334,18 +349,33 @@ p{
     height: 72px;
 
 }
+.brands__element:hover {
+    box-shadow: 0px 0px 10px 2px #EAEAEA;
+}
+.brands__element:hover .brands__more{
+    background-color: #ff3e780a;
+}
+.brands__more {
+    display: flex;
+    border-radius: 100%;
+}
+.brands.brands_open .brands__element {
+    display: flex;
+}
+.brands.brands_open .expand__img {
+    transform: scaleY(-1);
+}
 .brands .content__readMore {
     height: 24px;
     padding-left: 24px;
     margin-top: 0px;
-    margin-bottom: 0px;
+    margin-bottom: 24px;
 }
 .brands .readMore__expand {
     border: none; 
     background: none;
     cursor: pointer;
 }
-
 
 
 
@@ -380,7 +410,7 @@ p{
 
     /*_____________КОНТЕНТ_______________*/
     .menu-vertical {
-        display: flex;
+        display: none;
         position: fixed;
         top: 0px;
         z-index: 1;
@@ -422,12 +452,13 @@ p{
     }
 
     .swiper {
-        width: 240px;
+        width: 50%;
+        min-width: 220px;
         height: 116px;
         display: flex;
         justify-content: center;
         z-index: 0;
-        
+        margin-bottom: 16px;
     }
     .swiper-wrapper {
         height: 72px;
@@ -437,12 +468,16 @@ p{
         border-radius: 6px;
         background-color: #FFFFFF;
         box-sizing: border-box;
-        width: 240px !important;
+        min-width: 220px !important;
+        width: 100% !important;
         display: flex;
         justify-content: space-between;
         align-items: center;
         padding-left: 16px;
         padding-right: 16px;
+    }
+    .swiper-slide:hover {
+        box-shadow: inset 0px 0px 8px 2px #eaeaea4f;
     }
     .swiper-pagination-bullet{
         background-color: #DDDDDD;
@@ -491,7 +526,7 @@ p{
 
     /*_____________КОНТЕНТ_______________*/
     .menu-vertical {
-        display: flex;
+        display: none;
         position: fixed;
         top: 0px;
         z-index: 1;
@@ -566,6 +601,9 @@ p{
     .brands__textHeader2 {
         padding-left: 24px;
         margin-bottom: 24px;
+    }
+    .brands__element_hidden {
+        display: none;
     }
     .brands .content__readMore {
         padding-left: 24px;
@@ -689,36 +727,22 @@ p{
         padding-right: 35px;
 
     }
+    .brands__element_hidden {
+        display: flex;
+    }
     .brands__textHeader2 {
         padding-left: 35px;
         margin-bottom: 24px;
     }
+    .brands__element_windowSize_1120 {
+        display: none;
+    }
+
+
     .brands .content__readMore {
         padding-left: 35px;
         display: flex;
     }
 }
-
-
-
-.null {
-    margin-left: 35px;
-    width:5px;
-    height:500px;
-    background: repeating-linear-gradient(
-        45deg,
-        #ccc 0 10px,
-        #999 10px 20px
-      );
-}
-
-
-
-
-
-
-
-
-
 
 

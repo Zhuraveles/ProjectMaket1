@@ -8,11 +8,11 @@
         <link rel="stylesheet" href="MobStyle.css">
     </head>
     <body>
-        <div class="wrapper"> 
-            <header>
+        <div class="wrapper" id="wrapper"> 
+            <header id="header">
                 <nav class="menu-horizontal">
                     <div class="menu-horizontal__buttons-left">
-                        <button class="menu-button">
+                        <button class="menu-button buttonOpen" >
                             <img src="sources/burger.svg" alt="CPS">
                         </button>
                         <img src="sources/divider.png" class="menu-horizontal__separator menu-button_hidden"> <!-- Заменить -->
@@ -40,16 +40,13 @@
                     </div>
                 </nav>
             </header>
-            <div class="without-header">
-                
-
-
-
-                <nav class="menu-vertical">
+            <div class="without-header" id="without-header">
+                                
+                <nav class="menu-vertical" >
                     <div class="menu-vertical__div-top">
                         <div class="menu-vertical__buttons">
                             <div class="menu-vertical__buttons-left">
-                                <button class="menu-button menu-button_visible">
+                                <button class="menu-button menu-button_visible buttonCLose">
                                     <img src="sources/burgerCLose.svg">
                                 </button>
                                 <a href="#" class="menu__logo">
@@ -94,16 +91,12 @@
                         </div>
                         <div class="menu-vertical__languages">
                             <a class="language_active">RU</a>
-                            <a>EN</a>
-                            <a>CH</a>
+                            <a class="language_disactive">EN</a>
+                            <a class="language_disactive">CH</a>
                         </div>
                     </div>
                 </nav>
                 
-
-
-
-
                 <section class="page">
                     <div class="page__header1"> 
                         <h1 class="page__textHeader1">Услуги и сервисы</h1>
@@ -120,6 +113,7 @@
                             </a>
                         </div>
                     </div>
+
                     <div class="page__tab"> 
                         <button class="tab tab_hidden">Ремонтируемые бренды</button>
                         <button class="tab">Ремонтируемые устройства</button>
@@ -129,6 +123,7 @@
                         <button class="tab">Специальные цены</button>
                         <button class="tab">Отзывы</button>
                     </div>
+
                     <section class="content">
                         <div class="content__block-left">
                             <p class="content__text">Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.</p>
@@ -145,10 +140,7 @@
                         </div>  
                     </section>
 
-
-
-
-                    <section class="brands">
+                    <section class="brands" id="brands">
                         <h2 class="brands__textHeader2">РЕМОНТ ТЕХНИКИ РАЗЛИЧНЫХ БРЕНДОВ</h2>
                         <div class="swiper">
                             <div class="swiper-wrapper">
@@ -248,38 +240,38 @@
                                     <img src="sources/go.svg" alt="">
                                 </a>
                             </div>
-                            <div class="brands__element">
+                            <div class="brands__element brands__element_hidden">
                                 <img src="sources/BitmapViewSonic.svg" alt="" class="brands__img">
                                 <a class="brands__more">
                                     <img src="sources/go.svg" alt="">
                                 </a>
                             </div>
-                            <div class="brands__element">
+                            <div class="brands__element brands__element_hidden">
                                 <img src="sources/BitmapSony.svg" alt="" class="brands__img">
                                 <a class="brands__more">
                                     <img src="sources/go.svg" alt="">
                                 </a>
                             </div>
                             
-                            <div class="brands__element">
+                            <div class="brands__element brands__element_hidden brands__element_windowSize_1120">
                                 <img src="sources/BitmapLenovo.svg" alt="" class="brands__img">
                                 <a class="brands__more">
                                     <img src="sources/go.svg" alt="">
                                 </a>
                             </div>
-                            <div class="brands__element">
+                            <div class="brands__element brands__element_hidden brands__element_windowSize_1120">
                                 <img src="sources/BitmapSamsung.svg" alt="" class="brands__img">
                                 <a class="brands__more">
                                     <img src="sources/go.svg" alt="">
                                 </a>
                             </div>
-                            <div class="brands__element">
+                            <div class="brands__element brands__element_hidden brands__element_windowSize_1120">
                                 <img src="sources/BitmapApple.svg" alt="" class="brands__img">
                                 <a class="brands__more">
                                     <img src="sources/go.svg" alt="">
                                 </a>
                             </div>
-                            <div class="brands__element">
+                            <div class="brands__element brands__element_hidden brands__element_windowSize_1120">
                                 <img src="sources/BitmapBosch.svg" alt="" class="brands__img">
                                 <a class="brands__more">
                                     <img src="sources/go.svg" alt="">
@@ -294,15 +286,6 @@
                             </button>
                         </div>
                     </section>
-                    
-
-
-
-                    
-
-
-
-                    <!--  <div class="null"></div> -->
                 </section>
             </div>
             <!-- footer -->
